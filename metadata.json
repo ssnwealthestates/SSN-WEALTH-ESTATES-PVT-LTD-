@@ -1,0 +1,7 @@
+{
+  "name": "SSN Wealth Capital - Loan Application",
+  "description": "Official online loan application and document submission portal for SSN WEALTH & ESTATES (OPC) PRIVATE LIMITED.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

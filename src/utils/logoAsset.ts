@@ -1,0 +1,201 @@
+/**
+ * Official SSN WEALTH CAPITAL Brand Logo Assets & Utilities
+ * Provides standalone SVG and rasterized PNG data URLs for UI, Document portals, and jsPDF generation.
+ */
+
+export const SSN_LOGO_SVG = `<svg viewBox="0 0 240 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="pdfGoldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E29D" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA771C" />
+      <stop offset="100%" stop-color="#87580C" />
+    </linearGradient>
+    <linearGradient id="pdfGoldGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF8C25" />
+      <stop offset="50%" stop-color="#F3D17A" />
+      <stop offset="100%" stop-color="#87580C" />
+    </linearGradient>
+
+    <!-- Deep Navy Blue Gradients -->
+    <linearGradient id="pdfNavyGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3E62" />
+      <stop offset="50%" stop-color="#0B192C" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="pdfWaveBlueGrad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#4A90E2" />
+      <stop offset="30%" stop-color="#2563EB" />
+      <stop offset="70%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Skyscraper Gradients -->
+    <linearGradient id="pdfTowerGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AA771C" />
+      <stop offset="40%" stop-color="#FCE79D" />
+      <stop offset="70%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#784B05" />
+    </linearGradient>
+    <linearGradient id="pdfTowerBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#0B192C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Skyscraper Towers in Background -->
+  <g transform="translate(115, 20)">
+    <!-- Left building -->
+    <path d="M5 45 L15 35 L23 37 L23 75 L5 75 Z" fill="url(#pdfTowerBlue)" />
+    <!-- Center tall golden tower -->
+    <path d="M23 75 L23 15 L32 0 L37 12 L37 75 Z" fill="url(#pdfTowerGold)" />
+    <!-- Right angled tower -->
+    <path d="M37 75 L37 18 L46 28 L46 75 Z" fill="url(#pdfTowerBlue)" />
+    <!-- Far right tower -->
+    <path d="M46 75 L46 38 L54 44 L54 75 Z" fill="url(#pdfTowerGold)" />
+  </g>
+
+  <!-- Dynamic Blue Water Waves (Left) -->
+  <path
+    d="M125 72 C90 62 50 65 35 90 C22 110 25 138 42 152 C30 140 30 115 48 95 C68 75 98 73 125 72 Z"
+    fill="url(#pdfWaveBlueGrad)"
+  />
+  <path
+    d="M110 82 C80 72 45 80 32 108 C24 125 28 145 42 160 C32 145 32 125 45 105 C62 82 85 82 110 82 Z"
+    fill="#3B82F6"
+    opacity="0.8"
+  />
+  <path
+    d="M130 92 C95 86 60 95 48 120 C40 138 45 158 60 170 C48 155 46 136 58 120 C72 100 100 95 130 92 Z"
+    fill="#1E40AF"
+  />
+
+  <!-- Golden Base Arc / Ring -->
+  <path
+    d="M45 150 C75 185 170 185 205 145 C190 170 105 175 60 155 Z"
+    fill="url(#pdfGoldGrad1)"
+  />
+  <path
+    d="M80 162 C125 178 175 165 210 135 C185 158 130 168 80 162 Z"
+    fill="url(#pdfGoldGrad2)"
+  />
+
+  <!-- "SSN" 3D Monogram Letters -->
+  <g id="pdf-SSN-Letters">
+    <!-- First 'S' -->
+    <path
+      d="M95 125 C92 110 80 105 68 112 C58 118 56 128 62 135 C68 142 82 148 88 155 C95 163 92 175 80 180 C68 185 52 178 48 165 L58 162 C60 170 70 174 76 170 C82 166 84 158 78 152 C72 145 58 140 52 132 C45 122 50 108 62 102 C78 95 95 102 98 118 Z"
+      fill="url(#pdfNavyGrad1)"
+    />
+    <path
+      d="M92 123 C89 111 79 107 69 113 C60 119 59 127 64 133 C70 140 84 146 89 153 C93 158 91 166 83 171 L86 174 C96 167 98 156 92 149 C86 142 74 136 68 130 C64 125 65 119 72 115 C80 110 88 114 90 123 Z"
+      fill="url(#pdfGoldGrad1)"
+    />
+
+    <!-- Second 'S' -->
+    <path
+      d="M142 125 C139 110 127 105 115 112 C105 118 103 128 109 135 C115 142 129 148 135 155 C142 163 139 175 127 180 C115 185 99 178 95 165 L105 162 C107 170 117 174 123 170 C129 166 131 158 125 152 C119 145 105 140 99 132 C92 122 97 108 109 102 C125 95 142 102 145 118 Z"
+      fill="url(#pdfGoldGrad1)"
+    />
+    <path
+      d="M138 125 C136 113 126 108 116 114 C108 119 107 127 111 133 C117 139 129 145 134 151 C140 159 137 171 127 176 L125 171 C133 167 134 158 129 152 C123 146 111 141 106 135 C101 127 103 117 113 112 C123 107 135 112 138 125 Z"
+      fill="url(#pdfGoldGrad2)"
+    />
+
+    <!-- 'N' -->
+    <path
+      d="M152 105 L164 105 L164 165 L152 165 Z"
+      fill="url(#pdfNavyGrad1)"
+    />
+    <path
+      d="M162 105 L195 160 L204 154 L170 102 Z"
+      fill="url(#pdfGoldGrad1)"
+    />
+    <path
+      d="M192 105 L204 105 L204 175 L192 175 Z"
+      fill="url(#pdfNavyGrad1)"
+    />
+  </g>
+
+  <!-- Typography: WEALTH CAPITAL -->
+  <text
+    x="120"
+    y="204"
+    text-anchor="middle"
+    font-family="'Times New Roman', 'Cinzel', serif"
+    font-weight="bold"
+    font-size="18"
+    fill="#0B192C"
+    letter-spacing="2"
+  >WEALTH CAPITAL</text>
+
+  <!-- Golden Divider with Diamond -->
+  <line x1="45" y1="216" x2="195" y2="216" stroke="#D4AF37" stroke-width="1.2" />
+  <polygon points="120,212 124,216 120,220 116,216" fill="#0B192C" />
+
+  <!-- Slogan -->
+  <text
+    x="120"
+    y="232"
+    text-anchor="middle"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="10"
+    font-weight="600"
+    fill="#1E3E62"
+    letter-spacing="0.8"
+  >Your Trusted Financial Partner</text>
+</svg>`;
+
+let cachedPngDataUrl: string | null = null;
+
+/**
+ * Returns a high-resolution rasterized PNG data URL of the official logo,
+ * suitable for embedding directly into jsPDF (doc.addImage).
+ */
+export async function getLogoPngDataUrl(): Promise<string> {
+  if (cachedPngDataUrl) {
+    return cachedPngDataUrl;
+  }
+
+  // Check if running in browser
+  if (typeof window !== "undefined" && typeof document !== "undefined") {
+    try {
+      const svgBlob = new Blob([SSN_LOGO_SVG], {
+        type: "image/svg+xml;charset=utf-8",
+      });
+      const blobUrl = URL.createObjectURL(svgBlob);
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+
+      const loaded = await new Promise<boolean>((resolve) => {
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = blobUrl;
+      });
+
+      if (loaded) {
+        const canvas = document.createElement("canvas");
+        // High-DPI resolution for crisp PDF reproduction
+        canvas.width = 480;
+        canvas.height = 500;
+        const ctx = canvas.getContext("2d");
+        if (ctx) {
+          ctx.fillStyle = "#FFFFFF";
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          cachedPngDataUrl = canvas.toDataURL("image/png");
+          URL.revokeObjectURL(blobUrl);
+          return cachedPngDataUrl;
+        }
+      }
+      URL.revokeObjectURL(blobUrl);
+    } catch (err) {
+      console.warn("Could not rasterize SVG to PNG canvas:", err);
+    }
+  }
+
+  // Fallback to encoded SVG data URI
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(SSN_LOGO_SVG)}`;
+}
